@@ -28,7 +28,7 @@ public class CarrinhoDeCompras {
 
         double valortotal = 0;
         for(Item o : itemList){
-            valortotal += o.getPreco();
+            valortotal += o.getPreco() * o.getQuantidade();
         }
         return valortotal;
     }
